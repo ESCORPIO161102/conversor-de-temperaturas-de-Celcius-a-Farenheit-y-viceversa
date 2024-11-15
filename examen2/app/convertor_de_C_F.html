@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Fahrenheit a Celsius y viceversa</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="./assets/css/style.css">
+		<script>
+		</script>
+	</head>
+	<body>
+
+		<div class="container">
+			<h3 class="titulo">ESCORPIO-CONVERSOR-DE-GRADOS-DE-TEMPERATURA</h3>
+		<div class="box-form">
+			<h1 style="font-size: 1.5rem; color: var(--color-info);margin-bottom: 1rem;">Conversor de temperatura</h1>
+		<form name="formulario1">
+			<table style="text-align: left; margin-left: auto; margin-right: auto;">
+				<tbody>
+					<tr>
+						<td>
+							<label for="temperatura">Ingresa el valor de la temperatura:</label>
+						</td>
+						<td>
+							<input name="temperatura" required="required" step="0.000001" type="number" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="opcion">Selecciona que valor desea convertir:</label>
+						</td>
+						<td>
+							<select name="opcion" required="required">
+								<option value="" disabled selected>Seleccione una opcion</option>
+								<option value="1">Fahrenheit a Celsius</option>
+								<option value="2">Celsius a Fahrenheit</option>
+							</select>
+						</td>
+					</tr>
+					<tr align="right">
+						<td colspan="2" rowspan="1" >
+							<input value="Procesar" type="button" onclick="algoritmo();" class="btn-procesar" />
+							<input type="reset" class="btn-reset" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="resultado">El resultado de la operación es:</label>
+						</td>
+						<td>
+							<input name="resultado" step="0.000001" type="number" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		</div>
+		</div>
+		<script src="./assets/js/js_convertor_C_F.js"></script>
+	</body>
+</html>

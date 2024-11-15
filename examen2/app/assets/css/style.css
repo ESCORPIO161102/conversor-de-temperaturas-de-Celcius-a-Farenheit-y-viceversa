@@ -1,0 +1,240 @@
+:root {
+    --color-primary: #03231d;
+    --color-secondary: #76d7c4;
+    --color-white: white;
+    --color-success: #52be80;
+    --color-danger: #cd6155;
+    --color-info: #0a588c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 17px;
+}
+
+body {
+    background: var(--color-danger);
+    display: flex;
+    flex-direction: row;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-form {
+    width: 30rem;
+    background: var(--color-white);
+    margin: 4rem auto 0 auto;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0rem 0rem 0.5rem black;
+    align-items: center;
+}
+
+.btn-procesar{
+    background-color: #0a588c;
+    color: white;
+    width: 20%;
+}
+.btn-reset{
+    background-color: #b02212;
+    color: white;
+    width: 20%;
+}
+.titulo{
+    text-align: center;
+    color: #f9dd06;
+    padding: 20px;
+    align-items: center;
+}
+.box-table {
+    width: 100%;
+    background: var(--color-white);
+    margin: 4rem auto 0 auto;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0rem 0rem 0.5rem black;
+}
+
+.input-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.input>label {
+    color: gray;
+    font-weight: 400;
+}
+
+.input>input,
+select {
+    border: none;
+    outline: none;
+    border-bottom: 0.1rem solid var(--color-primary);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: #fbf4f4;
+}
+
+.button>button {
+    border: none;
+    outline: none;
+    border: 0.1rem solid var(--color-primary);
+    color: var(--color-primary);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.button>button:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.alert {
+    width: 100%;
+    border-radius: 0.2rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.alert>.alert-title {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.alert>.alert-text {
+    font-size: 0.7rem;
+}
+
+.success {
+    background: var(--color-success);
+}
+
+.danger {
+    background: var(--color-danger);
+}
+
+.info {
+    background: var(--color-info);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.style-table {
+    border-collapse: collapse;
+    margin: 1rem auto;
+    font-size: 1;
+    min-width: 400px;
+    width: 100%;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+
+.style-table thead tr {
+    background: var(--color-primary);
+    color: var(--color-white);
+    text-align: left;
+    font-weight: bold;
+}
+
+.style-table th,
+td {
+    padding: 0.3rem;
+}
+
+.style-table tbody tr {
+    border-bottom: 0.1rem solid var(--color-primary);
+}
+
+.style-table tbody tr:nth-of-type(even) {
+    background: var(--color-secondary);
+}
+
+.style-table tbody tr:last-of-type {
+    border-bottom: 0.2rem solid var(--color-primary);
+}
+
+.btn-update {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    background: var(--color-info);
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    color: var(--color-white);
+    cursor: pointer;
+    margin: 0.1rem;
+    transition: all 0.250ms ease-in-out;
+}
+
+.btn-update:hover,
+.btn-delete:hover {
+    box-shadow: 0 0 0.2rem black;
+}
+
+.btn-delete {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    background-color: var(--color-danger);
+    padding: 0.2rem;
+    color: var(--color-white);
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin: 0.1rem;
+    transition: all 0.250ms ease-in-out;
+}
+
+.menu-bar {
+    background: var(--color-white);
+    margin: 1rem 1rem;
+    width: 20%;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    box-shadow: 0rem 0rem 0.5rem;
+}
+
+.menu-bar>ul {
+    list-style: none;
+    width: 100%;
+}
+
+.menu-bar>ul li {
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.menu-bar>ul li:hover {
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+}
+
+.menu-bar>ul li>a {
+    text-decoration: none;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.menu-bar>ul li>a:hover {
+    color: var(--color-white);
+}
